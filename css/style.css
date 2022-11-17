@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: auto 1fr 1.5fr 3fr 3fr 1.5fr;
+    height: 100vh;
+    grid-template-areas:
+        "header header header header"
+        "aside section section section"
+        "aside section section section"
+        "aside section section section"
+        "aside section section section"
+        "aside section section section";
+}
+
+header {
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    grid-area: section;
+}
