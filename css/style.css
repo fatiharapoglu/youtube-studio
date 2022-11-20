@@ -1,41 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     color: white;
-    background-color: black;
+    background-color: #1f1f1f;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul, li {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.centered {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr;
-    grid-template-rows: auto 1fr 1.5fr 3fr 3fr 1.5fr;
+    grid-template-columns: 0.75fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: auto 1fr 1.5fr 3fr 3fr 1.5fr 1fr;
     height: 100vh;
     grid-template-areas:
         "header header header header"
-        "aside section section section"
-        "aside section section section"
-        "aside section section section"
-        "aside section section section"
-        "aside section section section";
+        "aside section-header section-header section-header"
+        "aside . . ."
+        "aside . . ."
+        "aside . . ."
+        "aside . . ."
+        "aside content7 content7 content7";
+}
+
+.wrapper {
+    display: grid;
+    grid-column: 2 / 5;
+    grid-row: 3 / 7;
+    grid-template-areas:
+        "content1 content2 content3"
+        "content1 content2 content4"
+        ". content5 content4"
+        ". content5 content6";
+}
+
+.rounded-icon {
+    background-color: #282828;
+    border: none;
+    border-radius: 32px;
+    padding: 12px 12px;
+    margin-right: 12px;
+}
+
+.header-title {
+    padding-left: 35px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 header {
     grid-area: header;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #282828;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+}
+
+header img {
+    width: 32px;
+    height: auto;
+    border: none;
+    border-radius: 50%;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+button {
+    background-color: #bbbbbb00;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #ffffff17;
+}
+
+header .header-left {
+    font-size: 26px;
+    padding: 0 24px;
+    word-spacing: 31px;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+
+header input {
+    width: 300px;
+    border-radius: 5px;
+    background-color: #282828;
+    padding: 8px;
+    font-size: 14px;
+    margin: 5px;
+    color: #aaaaaa;
+    border: 1px solid #ffffff17;
+}
+
+header input::placeholder {
+    color: #aaaaaa;
 }
 
 aside {
     grid-area: aside;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #282828;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 0;
+    border-right: 1px solid rgb(92 92 92 / 22%);
+    z-index: 10;
 }
 
-section {
-    grid-area: section;
+aside img {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
+
+.profile {
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.section-header {
+    grid-area: section-header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.content-one {
+    grid-area: content1;
+}
+
+.content-two {
+    grid-area: content2;
+    overflow: hidden;
+}
+
+.content-three {
+    grid-area: content3;
+}
+
+.content-four {
+    grid-area: content4;
+}
+
+.content-five {
+    grid-area: content5;
+}
+
+.content-six {
+    grid-area: content6;
+    overflow: hidden;
+}
+
+.content-seven {
+    grid-area: content7;
+}
+
+/* .card {
+    padding: 8px;
+    background-color: #282828;
+    border: 1px solid gray;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    width: 80%;
+} */

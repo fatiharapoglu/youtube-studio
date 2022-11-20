@@ -4,34 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fettan | Youtube Dashboard</title>
+    <title>Fettan | YouTube Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tailwind.css">
     <script src="https://kit.fontawesome.com/4b1acd5b1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header">
+            <div class="header-left">
                 <i class="fa-solid fa-bars"></i>
-                <i class="fa-brands fa-youtube"></i><span>Studio</span>
+                <i class="fa-brands fa-youtube" style="color: red;"></i><span>Studio</span>
             </div>
-            <div class="header">
-                <input type="text">
+            <div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass input-icon"></i><input type="text" placeholder="&nbsp;Search across your chanel...">
+                </div>
             </div>
-            <div class="header">logos</div>
+            <div class="header-right">
+                <i class="fa-regular fa-circle-question"></i>
+                <button>CREATE</button>
+                <img src="assets/pp.jpeg" alt="picsum">
+            </div>
         </header>
         <aside>
             <div class="aside">
                 <div>
-                    <img src="https://picsum.photos/id/237/100/100" alt="picsum">
+                    <div class="profile">
+                        <img src="assets/pp.jpeg" alt="picsum">
+                        <span class="centered">Fettan</span>
+                    </div>
+                    <li><a href="#"><i class="fa-solid fa-table-columns"></i> &nbsp; &nbsp; Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrows-to-circle"></i> &nbsp; &nbsp;Content</a></li>
+                    <li><a href="#"><i class="fa-solid fa-play"></i> &nbsp; &nbsp;  &nbsp;Playlist</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-simple"></i> &nbsp; &nbsp; Analytics</a></li>
+                    <li><a href="#"><i class="fa-solid fa-comment"></i> &nbsp; &nbsp;Comments</a></li>
+                    <li><a href="#"><i class="fa-regular fa-closed-captioning"></i> &nbsp; &nbsp;Subtitles</a></li>
+                    <li><a href="#"><i class="fa-regular fa-copyright"></i> &nbsp; &nbsp;Copyright</a></li>
+                    <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i> &nbsp; &nbsp;Monetization</a></li>
+                    <li><a href="#"><i class="fa-brands fa-intercom"></i> &nbsp; &nbsp; Customization</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book-open"></i> &nbsp; &nbsp;Audio library</a></li>
                 </div>
             </div>
-            <div class="aside">bot</div>
+            <div class="aside">
+                <li><a href="#"><i class="fa-solid fa-gear"></i>&nbsp; &nbsp; Settings</a></li>
+                <li><a href="#"><i class="fa-solid fa-comments"></i>&nbsp; &nbsp;Send Feedback</a></li>
+            </div>
         </aside>
-        <section>
-            <div class="section">content</div>
-        </section>
+        <div class="section-header">
+            <div class="header-title">
+                Chanel Dashboard
+            </div>
+            <div>
+                <a class="rounded-icon" href="#"><i class="fa-solid fa-upload"></i></a>
+                <a class="rounded-icon" href="#"><i class="fa-solid fa-tower-broadcast"></i></a>
+                <a class="rounded-icon" href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="content-one card">
+                <img src="https://www.gstatic.com/youtube/img/creator/no_content_illustration_upload_video_v3_darkmode.svg" alt="google">
+                <p>Want to see metrics for your latest video? Upload and post a video to get started.</p>
+                <button>UPLOAD VIDEOS</button>
+            </div>
+            <div class="content-two card">
+                <h5>Channel analytics</h5>
+                <h6>Current subscribers</h6>
+                <p><span style="color:green;">+40</span> in last 20 days</p>
+                <h5>Summary</h5>
+                <p>Last 28 Days</p>
+                <h6>Views</h6>
+                <h6>Watch time (hours)</h6>
+                <h5>Top videos</h5>
+                <p>Last 48 hours - views</p>
+                <h6>video 1</h6>
+                <h6>video 2</h6>
+                <h6>video 3</h6>
+                <a href="#">GO TO CHANNEL ANALYTICS</a>
+            </div>
+            <div class="content-three card">
+                <h5>Youtube known issues</h5>
+                <h6>Random info about youtube</h6>
+            </div>
+            <div class="content-four card">
+                <h5>Creator Insider</h5>
+                <img src="https://picsum.photos/id/201/100/100" alt="picsum">
+                <h6>This week at youtube</h6>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a href="#">WATCH ON YOUTUBE</a>
+            </div>
+            <div class="content-five card">
+                <h5>What's new in studio</h5>
+                <h6>Channel permissions for YouTube Live</h6>
+                <h6>YouTube Studio app refresh</h6>
+                <h6>Update to YouTube's Terms of Service</h6>
+            </div>
+            <div class="content-six card">
+                <h5>Recent subscribers</h5>
+                <p>Last 90 days</p>
+                <p><img src="https://picsum.photos/id/203/100/100" alt="picsum">Name Surname</p>
+                <p><img src="https://picsum.photos/id/305/100/100" alt="picsum">Name Surname</p>
+                <p><img src="https://picsum.photos/id/108/100/100" alt="picsum">Name Surname</p>
+            </div>
+        </div>
+        <div class="content-seven">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Policies & Safety</a>
+        </div>
     </div>
 </body>
 </html>
