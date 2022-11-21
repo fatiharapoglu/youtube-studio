@@ -11,13 +11,29 @@ body {
 a {
     color: #aaaaaa;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
+}
+
+a:hover {
+    color: #3ea6ff;
 }
 
 ul, li {
     list-style: none;
     margin-top: 24px;
+}
+
+h3, h6 {
+    line-height: 1px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+p {
+    font-size: 0.8rem;
 }
 
 .centered {
@@ -46,12 +62,15 @@ ul, li {
 .wrapper {
     display: grid;
     grid-column: 2 / 5;
-    grid-row: 3 / 7;
+    grid-row: 3 / 6;
     grid-template-areas:
         "content1 content2 content3"
         "content1 content2 content4"
         ". content5 content4"
         ". content5 content6";
+    justify-content: start;
+    grid-gap: 25px;
+    margin-left: 36px;
 }
 
 .rounded-icon {
@@ -66,6 +85,10 @@ ul, li {
     padding-left: 35px;
     font-weight: bold;
     font-size: 24px;
+}
+
+.header-logos {
+    margin-right: 35px;
 }
 
 header {
@@ -106,25 +129,32 @@ button {
 
 header .header-left {
     font-size: 26px;
-    padding: 0 24px;
-    word-spacing: 31px;
+    padding: 0 25px;
     letter-spacing: -2px;
     font-weight: 500;
 }
 
 header input {
     width: 300px;
-    border-radius: 5px;
     background-color: #282828;
-    padding: 8px;
     font-size: 14px;
     margin: 5px;
     color: #aaaaaa;
-    border: 1px solid #ffffff17;
+    border: none;
 }
 
 header input::placeholder {
     color: #aaaaaa;
+}
+
+.search {
+    width: 350px;
+    border-radius: 5px;
+    background-color: #282828;
+    font-size: 14px;
+    color: #aaaaaa;
+    border: 1px solid #ffffff17;
+    padding: 4px 23px;
 }
 
 aside {
@@ -134,14 +164,14 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
-    border-right: 1px solid rgb(92 92 92 / 22%);
+    padding: 25px 0;
+    border-right: 1px solid rgb(96 96 96 / 53%);
     z-index: 10;
+    width: 250px;
 }
 
 aside img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
     border: none;
     border-radius: 50%;
     margin-bottom: 40px;
@@ -166,40 +196,119 @@ aside img {
 
 .content-one {
     grid-area: content1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1px;
+    height: 370px;
+}
+
+.content-one img {
+    width: 160px;
+}
+
+.content-one button {
+    margin-top: 25px;
+}
+
+.content-one p {
+    color: rgb(170, 170, 170);
 }
 
 .content-two {
     grid-area: content2;
-    overflow: hidden;
+    width: 250px;
+}
+
+.content-two p a{
+    color: white;
+}
+
+.content-two p a:hover{
+    color: #3ea6ff;
 }
 
 .content-three {
     grid-area: content3;
+    display: grid;
+    align-content: space-evenly;
 }
 
 .content-four {
     grid-area: content4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-four img {
+    width: 250px;
+    height: 150px;
+}
+
+.content-four p a{
+    color: white;
+}
+
+.content-four p a:hover{
+    color: #3ea6ff;
 }
 
 .content-five {
-    grid-area: content5;
+    grid-area: content6;
 }
 
 .content-six {
-    grid-area: content6;
-    overflow: hidden;
+    grid-area: content5;
+    height: fit-content;
+}
+
+.content-six img {
+    width: 32px;
+    height: auto;
+    border: none;
+    border-radius: 50%;
+}
+
+.content-six div {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
 }
 
 .content-seven {
     grid-area: content7;
+    position: absolute;
+    bottom: 1%;
+    left: 250px;
 }
 
-/* .card {
-    padding: 8px;
+.content-seven a {
+    padding-left: 35px;
+}
+
+.card {
     background-color: #282828;
-    border: 1px solid gray;
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    width: 80%;
-} */
+    border: 1px solid #ffffff1a;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+.color-mute {
+    color: #aaaaaa;
+    font-size: 10px;
+}
+
+.card a {
+    color: #3ea6ff;
+}
+
+.card button {
+    background-color: #3ea6ff;
+    color: black;
+}
+
+.dashboard {
+    color: #ff4e45;
+}
