@@ -1,7 +1,14 @@
-# YouTube Studio (Dashboard Final Intermediate CSS)
+# YouTube Studio
 
-[The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)'s final intermediate CSS project.
+Created with **HTML** and **CSS**.
 
-[Click for live preview](https://fatiharapoglu.github.io/youtubeDashboard)
+⮕ [Live preview](https://fatiharapoglu.github.io/youtube-studio/)
 
-![RPS](assets/readme.png)
+## Helpers
+
+-   CSS Grid
+-   [Material](https://fonts.google.com/icons/) Symbols
+
+## How It Looks
+
+![ss](/assets/readme.png)
